@@ -2,6 +2,7 @@ const inquirer = require('inquirer')
 const fs = require('fs')
 const api = require('./utils/githubapi.js');
 const util = require('util')
+const writeFileAsync = util.promisify(writeToFile);
 
 const generateMarkdown = require('./utils/generateMarkdown.js')
 // array of questions for user
@@ -21,7 +22,7 @@ const questions = [
     {
         type: 'input',
         message: 'Enter your project name.',
-        name: 'Title'
+        name: 'title'
     },
 
     {
@@ -41,7 +42,13 @@ const questions = [
         message: "Choose a license for your project.",
         choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
         name: 'license'
-    }
+    },
+
+    {
+        type: 'input',
+        message: 'What is your email?',
+        name: 'email'
+    },
 
 ];
 
@@ -56,15 +63,14 @@ function writeToFile(fileName, data) {
     });
 }
 
-const writeFileAsync = util.promisify(writeToFile);
-
 // function to initialize program
-function init() {
-    userInput = inquirer.prompt(questions)
-    userInfo = api.getUser(userInput)
+async function init() {
+    const userInput = await inquirer.prompt(questions)
+    const userInfo =  await api.getUser(userInput)
+    const markDown = generateMarkdown(userInput, userInfo)
 
-    writeFileAsync('ExampleREADME.md', generateMarkdown(userInput, userInfo))
-}
+    await writeFileAsync('README.md', markDown)
+};
 
 // function call to initialize program
 init();
