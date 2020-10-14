@@ -14,13 +14,14 @@ function generateMarkdown(data) {
 
   ## Test
   ${data.license}
+`
+ ` ## Questions
+  GitHub: @${data.username}`
 
-  ## Questions
-  GitHub: @${data.username}
-  Email: ${data.email}
+  `Email: ${data.email}`
 
 
-`;
+;
 }
 
 module.exports = generateMarkdown;
