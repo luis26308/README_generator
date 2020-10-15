@@ -1,6 +1,5 @@
 
   ![javascript](https://img.shields.io/badge/javascript-100%25-blue)
-  ![License]https://img.shields.io/badge/License-MIT-blue)
 
   # README.md generator
 
@@ -15,6 +14,9 @@
 
   ## Installation
   To generate your own README, first run npm install in order to install the following npm package dependencies as specified in the package.json. finally install inquirer to run this application.
+
+  ## Usage
+  <iframe src="https://drive.google.com/file/d/1IYYtLGar98Tm6i_D5X8hj_qkcAByLpjz/preview" width="640" height="480"></iframe>
 
   ## License
   MIT License
