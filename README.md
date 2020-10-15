@@ -1,8 +1,14 @@
 
-  # README generator
+  ![javascript](https://img.shields.io/badge/javascript-100%25-blue)
+  ![license](https://shields.io/category/license-MIT License)
+
+  # README.md generator
 
   ## Table Of Contents
-  [description](#installation)
+  [Description](#Description)
+  [installation](#installation)
+  [License](#License)
+  [Questions](#Questions)
 
   ## Description
   This README generator app creates a simple README.md file using all the inputes provided to it.
@@ -18,7 +24,7 @@
 
   ## Questions
 
-  ### GitHub: luis26308
+  ### GitHub: @luis26308
   
   ### Email: luisg.diaz117@gmail.com
 
