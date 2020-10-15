@@ -2,15 +2,15 @@
 function generateMarkdown(data) {
   return `
   ![javascript](https://img.shields.io/badge/javascript-100%25-blue)
-  ![License]https://img.shields.io/badge/License-MIT-blue)
+  
 
   # ${data.title}
 
   ## Table Of Contents
-  [Description](#Description)\
-  [installation](#installation)\
-  [License](#License)\
-  [Questions](#Questions)
+  - [Description](#Description)  
+  - [installation](#installation)  
+  - [License](#License)  
+  - [Questions](#Questions)  
 
   ## Description
   ${data.description}
@@ -22,8 +22,9 @@ function generateMarkdown(data) {
   ${data.license}
 
   ## Questions
+  For any questions please reach me by Github or by email.  
 
-  GitHub: @${data.username}\
+  GitHub: http://www.github.com/${data.username}  
   Email: ${data.email}
 
 `;
