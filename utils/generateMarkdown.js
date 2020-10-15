@@ -18,7 +18,7 @@ function generateMarkdown(data) {
   ${data.installation}
 
   ## Usage
-  ![Demo gif]{demo_gif.gif}
+  ![Demo gif]Testdemo/demo_gif.gif}
 
   ## License
   ${data.license}
