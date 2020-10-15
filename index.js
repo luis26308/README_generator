@@ -37,13 +37,18 @@ const questions = [
         name: 'installation'
     },
 
+    // {
+    //     type: 'list',
+    //     message: "Choose a license for your project.",
+    //     choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
+    //     name: 'license'
+    // },
     {
-        type: 'list',
-        message: "Choose a license for your project.",
-        choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
+        type: 'confirm',
+        message: "Is MIT license okay for this project",
         name: 'license'
     },
-
+    
     {
         type: 'input',
         message: 'What is your email?',

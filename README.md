@@ -1,11 +1,11 @@
 
   ![javascript](https://img.shields.io/badge/javascript-100%25-blue)
-  ![License](https://shields.io/category/license)
+  ![License]https://img.shields.io/badge/License-MIT-blue)
 
   # README.md generator
 
   ## Table Of Contents
-   [Description](#Description)   [installation](#installation)   [License](#License)   [Questions](#Questions)
+  [Description](#Description)  [installation](#installation)  [License](#License)  [Questions](#Questions)
 
   ## Description
   This command line application that uses Node.js to creates a README.md file using all the inputes provided to it by the user from the prompted question.
@@ -14,7 +14,7 @@
   To generate your own README, first run npm install in order to install the following npm package dependencies as specified in the package.json. finally install inquirer to run this application.
 
   ## License
-  MIT License
+  true
 
   ## Questions
 
