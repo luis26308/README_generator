@@ -18,7 +18,7 @@ function generateMarkdown(data) {
   ${data.installation}
 
   ## Usage
-  <iframe src="https://drive.google.com/file/d/1IYYtLGar98Tm6i_D5X8hj_qkcAByLpjz/preview" width="640" height="480"></iframe>
+  ![Demo gif]{demo_gif.gif}
 
   ## License
   ${data.license}
