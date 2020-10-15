@@ -1,20 +1,24 @@
 
-  # a
+  # README generator
+
+  ## Table Of Contents
+  [description](#installation)
 
   ## Description
-  a
+  This README generator app creates a simple README.md file using all the inputes provided to it.
 
   ## Installation
-  a
+  To generate your own README, first run npm install in order to install the following npm package dependencies as specified in the package.json.
 
   ## License
-  GNU AGPLv3
+  MIT License
 
   ## Test
-  GNU AGPLv3
+  MIT License
 
   ## Questions
-  GitHub: @luis26308
-  Email: a
 
+  ### GitHub: luis26308
+  
+  ### Email: luisg.diaz117@gmail.com
 

@@ -3,6 +3,9 @@ function generateMarkdown(data) {
   return `
   # ${data.title}
 
+  ## Table Of Contents
+  [description](#installation)
+
   ## Description
   ${data.description}
 
@@ -14,14 +17,14 @@ function generateMarkdown(data) {
 
   ## Test
   ${data.license}
-`
- ` ## Questions
-  GitHub: @${data.username}`
 
-  `Email: ${data.email}`
+  ## Questions
 
+  ### GitHub: ${data.username}
+  
+  ### Email: ${data.email}
 
-;
+`;
 }
 
 module.exports = generateMarkdown;
