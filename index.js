@@ -65,11 +65,16 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 async function init() {
+    try{
     const userInput = await inquirer.prompt(questions)
     const userInfo =  await api.getUser(userInput)
     const markDown = generateMarkdown(userInput, userInfo)
 
     await writeFileAsync('README.md', markDown)
+    }
+    catch (error) {
+        console.log(error);
+    }
 };
 
 // function call to initialize program
