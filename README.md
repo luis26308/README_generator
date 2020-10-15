@@ -16,7 +16,7 @@
   To generate your own README, first run npm install in order to install the following npm package dependencies as specified in the package.json. finally install inquirer to run this application.
 
   ## Usage
-  ![Demo gif]{./demo_gif.gif}
+  ![Demo gif]{./Testdemo/demo_gif.gif}
 
   ## License
   MIT License
