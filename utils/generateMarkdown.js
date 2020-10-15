@@ -7,7 +7,8 @@ function generateMarkdown(data) {
 
   ## Table Of Contents
   - [Description](#Description)  
-  - [installation](#installation)  
+  - [Installation](#installation)  
+  - [Usage](#Usage)  
   - [License](#License)  
   - [Questions](#Questions)  
 
@@ -18,7 +19,7 @@ function generateMarkdown(data) {
   ${data.installation}
 
   ## Usage
-  ![Demo gif]Testdemo/demo_gif.gif}
+  ![Demo gif]{demo.gif}
 
   ## License
   ${data.license}
